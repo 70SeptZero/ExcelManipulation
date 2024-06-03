@@ -4,7 +4,7 @@
 
 中文说明在前半段。
 
-The English instructions are in the second half, by Translate tools and me.
+The English instructions are in the second half, translated by Translation tools and me.
 
 # 项目介绍
     本项目是用于合并Excel文件而写的一个项目。
@@ -28,6 +28,19 @@ The English instructions are in the second half, by Translate tools and me.
 # 环境依赖
 
 jdk-17.0.9
+
+```xml
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.2</version>
+</dependency>
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.2</version>
+</dependency>
+```
 
 
 # 目录结构描述
@@ -68,7 +81,7 @@ jdk-17.0.9
 1、排除了带格式的空白行
 ```
 
-##  v0.0.9: 
+##  v0.0.99: 
 
 ```
 1、解决了带公式单元格合并异常的问题
@@ -106,7 +119,7 @@ The relative path structure is as follows:
 
 These two folders are placed at the same level as the project, not within the project.
 
-Future Renewal Plans:
+Future updates Plans:
 If you don't know how to launch, there will be a simple version in the future, click to launch.
 After that, it can be made into a separate method, which can be directly called after importing.
 
@@ -139,7 +152,7 @@ jdk-17.0.9
 
 2、Run the project.
 
-3、Retrieve the merged file from the "output" folder.
+3、The merged file will be put in the "output" folder.
 
 Note: Due to limited support for some Excel formulas in Apache POI, it may not be possible to retrieve the values of cells containing certain formulas.
 
@@ -160,7 +173,7 @@ When this situation occurs, the project will print the source of the cell and th
 1、Excluded formatted empty rows.
 ```
 
-##  v0.0.9: 
+##  v0.0.99: 
 
 ```
 1、Resolved the issue of abnormal merging of cells with formulas.

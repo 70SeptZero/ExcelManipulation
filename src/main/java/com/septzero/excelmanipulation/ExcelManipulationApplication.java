@@ -38,6 +38,12 @@ public class ExcelManipulationApplication {
             System.out.println("读取路径为：" + folder.toPath().toAbsolutePath());
             File[] inputFiles = folder.listFiles();
 
+            //检查输出文件夹是否存在，不存在就创建
+            File outputPath = new File("../output");
+            if (!outputPath.exists()) {
+                outputPath.mkdirs();
+            }
+
             if (inputFiles != null) {
                 for (File inputFile : inputFiles) {
                     System.out.println("fileName:" + inputFile.getName());
